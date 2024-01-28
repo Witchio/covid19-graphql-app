@@ -1,0 +1,18 @@
+type Query {
+  country(name: String!): Country
+  countries(names: [String!]!): [Country]
+  countriesList: [String]
+  maxCases: Country
+  minCases: Country
+}
+
+type Country {
+  country: String
+  cases: Int
+  todayCases: Int
+  deaths: Int
+  todayDeaths: Int
+  recovered: Int
+  todayRecovered: Int
+}
+
