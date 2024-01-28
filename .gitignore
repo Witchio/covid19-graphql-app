@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+
+# IntelliJ IDEA
+.idea/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Compiled Java
+target/
+bin/
+
+# Logs
+logs/
+
+# Spring Boot property file
+application.properties
+
+# macOS
+.DS_Store
+
+# Thumbnails
+Thumbs.db
+
+# Package Files
+*.jar
+*.war
+*.ear
+
+# Gradle Wrapper
+gradle-wrapper.jar
+gradle-wrapper.properties
+¨
