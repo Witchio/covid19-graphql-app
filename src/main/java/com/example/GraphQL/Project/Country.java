@@ -27,10 +27,6 @@ public class Country {
   @JsonProperty("todayRecovered")
   private int todayRecovered;
 
-  public String getCountry() {
-    return countryName;
-  }
-
   public int getCases() {
     return cases;
   }
@@ -55,8 +51,12 @@ public class Country {
     return todayRecovered;
   }
 
-  public void setCountry(String country) {
-    this.countryName = country;
+  public String getCountryName() {
+    return countryName;
+  }
+
+  public void setCountryName(String countryName) {
+    this.countryName = countryName;
   }
 
   public void setCases(int cases) {

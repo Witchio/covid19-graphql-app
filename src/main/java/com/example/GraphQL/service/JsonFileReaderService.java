@@ -8,14 +8,13 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 import org.springframework.stereotype.Service;
 
 @Service
 public class JsonFileReaderService {
 
-  private List<Country> data;
+  private final List<Country> data;
 
   public JsonFileReaderService() throws IOException {
     ObjectMapper mapper = new ObjectMapper();
@@ -26,7 +25,7 @@ public class JsonFileReaderService {
 
   public Country getCountry(String name) {
     for (Country country : data) {
-      if (country.getCountry().equalsIgnoreCase(name)) {
+      if (country.getCountryName().equalsIgnoreCase(name)) {
         return country;
       }
     }
@@ -37,7 +36,7 @@ public class JsonFileReaderService {
   public List<String> getCountriesList() {
     List<String> countries = new ArrayList<>();
     for (Country country : data) {
-      countries.add(country.getCountry());
+      countries.add(country.getCountryName());
     }
 
     return countries;
