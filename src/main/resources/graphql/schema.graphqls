@@ -7,7 +7,7 @@ type Query {
 }
 
 type Country {
-  country: String
+  countryName: String
   cases: Int
   todayCases: Int
   deaths: Int

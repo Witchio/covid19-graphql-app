@@ -9,12 +9,16 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 @Service
 public class JsonFileReaderService {
 
   private final List<Country> data;
+
+  @Value("${covid.data.file.path}")
+  private String covidDataFilePath;
 
   public JsonFileReaderService() throws IOException {
     ObjectMapper mapper = new ObjectMapper();
