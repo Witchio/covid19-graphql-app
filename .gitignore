@@ -30,8 +30,3 @@ Thumbs.db
 *.jar
 *.war
 *.ear
-
-# Gradle Wrapper
-gradle-wrapper.jar
-gradle-wrapper.properties
-¨
