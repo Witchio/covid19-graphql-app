@@ -1,4 +1,4 @@
-package com.example.GraphQL.Project;
+package com.example.GraphQL;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
