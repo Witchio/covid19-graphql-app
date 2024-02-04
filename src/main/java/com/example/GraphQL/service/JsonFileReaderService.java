@@ -17,9 +17,6 @@ public class JsonFileReaderService {
 
   private final List<Country> data;
 
-  @Value("${covid.data.file.path}")
-  private String covidDataFilePath;
-
   public JsonFileReaderService() throws IOException {
     ObjectMapper mapper = new ObjectMapper();
     InputStream is = getClass().getResourceAsStream("/data/covid-data.json");
